@@ -59,5 +59,9 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.19"
-  }
+  },
+  "description": "",
+  "main": ".eslintrc.js",
+  "author": "",
+  "license": "ISC"
 }
