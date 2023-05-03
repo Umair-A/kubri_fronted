@@ -706,6 +706,35 @@ export const listsMarkupGrid = [
 
 ];
 
+export const listsRiskAccountGrid = [
+  { type: 'checkbox', width: '50' },
+  { field: 'AccountGroup',
+    headerText: 'AccountGroup',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'AssetClassGroup',
+    headerText: 'AssetClassGroup',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'LimitSymbolGroup',
+    headerText: 'LimitSymbolGroup',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Enable',
+    headerText: 'Enable',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Description',
+    headerText: 'Description',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Actions',
+    headerText: 'Actions',
+    width: '150',
+    textAlign: 'Center' },
+
+];
+
 export const TakerListsGrid = [
   { type: 'checkbox', width: '50' },
   { field: 'Taker',
@@ -1617,6 +1646,27 @@ export const HubAggregationData = [
     FilterFactor: '-2',
     BookConstruction: ' ',
     Description: 'Australian Dollar vs Canadian Dollar',
+  },
+];
+
+export const listsRiskAccountData = [
+  {
+    CustomerID: 1001,
+    AccountGroup: 'Test-1',
+    AssetClassGroup: '',
+    LimitSymbolGroup: 'Limit-symbol-1',
+    Enable: '',
+    Description: '',
+    Action: '',
+  },
+  {
+    CustomerID: 1002,
+    AccountGroup: 'Test-1',
+    AssetClassGroup: '',
+    LimitSymbolGroup: 'Limit-symbol-1',
+    Enable: '',
+    Description: '',
+    Action: '',
   },
 ];
 

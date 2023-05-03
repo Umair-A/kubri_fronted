@@ -8,6 +8,7 @@ import { Securities, Pyramid, Line, Area, Bar, Financial, UniversalSymbols, Make
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
+import RiskAccounts from './pages/RiskAccounts';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -76,6 +77,8 @@ const App = () => {
                 <Route path="/TakerFeeds" element={(<TakerFeeds />)} />
                 <Route path="/MarkupModels" element={(<MarkupModels />)} />
                 <Route path="/TakerExecutionModels" element={(<TakerExecutionModels />)} />
+                <Route path="/RiskAccounts" element={(<RiskAccounts />)} />
+
                 {/* pages  */}
 
                 {/* apps  */}
