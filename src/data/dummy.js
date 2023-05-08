@@ -589,50 +589,6 @@ export const listsGrid = [
 
 ];
 
-export const HubAggregationGrid = [
-  { type: 'checkbox', width: '50' },
-  { field: 'HubAggregationSymbol',
-    headerText: 'HubAggregationSymbol',
-    width: '150',
-    textAlign: 'Center' },
-  { field: 'Security',
-    headerText: 'Security',
-    width: '150',
-    textAlign: 'Center' },
-  { field: 'MakerSession',
-    headerText: 'MakerSession',
-    width: '150',
-    textAlign: 'Center' },
-  { field: 'Sessions',
-    headerText: 'Sessions',
-    width: '150',
-    textAlign: 'Center' },
-  { field: 'ExecMode',
-    headerText: 'ExecMode',
-    width: '150',
-    textAlign: 'Center' },
-  { field: 'ExecBoost',
-    headerText: 'ExecBoost',
-    width: '150',
-    textAlign: 'Center' },
-  { field: 'Enable',
-    headerText: 'Enable',
-    width: '150',
-    textAlign: 'Center' },
-  { field: 'FilterFactor',
-    headerText: 'FilterFactor',
-    width: '150',
-    textAlign: 'Center' },
-  { field: 'BookConstruction',
-    headerText: 'BookConstruction',
-    width: '150',
-    textAlign: 'Center' },
-  { field: 'Description',
-    headerText: 'Description',
-    width: '150',
-    textAlign: 'Center' },
-];
-
 export const listsMarkupGrid = [
   { type: 'checkbox', width: '50' },
   { field: 'MarkupSymbol',
@@ -735,6 +691,60 @@ export const listsRiskAccountGrid = [
 
 ];
 
+export const listsUserGrid = [
+  { type: 'checkbox', width: '50' },
+  { field: 'UserName',
+    headerText: 'UserName',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'FirstName',
+    headerText: 'FirstName',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'LastName',
+    headerText: 'LastName',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Email',
+    headerText: 'Email',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Phone',
+    headerText: 'Phone',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'RiskAccount',
+    headerText: 'RiskAccount',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'EmailNotify',
+    headerText: 'EmailNotify',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Actions',
+    headerText: 'Actions',
+    width: '150',
+    textAlign: 'Center' },
+
+];
+
+export const listsAssetAccountGrid = [
+  { type: 'checkbox', width: '50' },
+  { field: 'AssetClassGroup',
+    headerText: 'AssetClassGroup',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Description',
+    headerText: 'Description',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Actions',
+    headerText: 'Actions',
+    width: '150',
+    textAlign: 'Center' },
+
+];
+
 export const TakerListsGrid = [
   { type: 'checkbox', width: '50' },
   { field: 'Taker',
@@ -807,6 +817,50 @@ export const MakerApiLinkGrid = [
     textAlign: 'Center' },
   { field: 'Enable',
     headerText: 'Enable',
+    width: '150',
+    textAlign: 'Center' },
+];
+
+export const HubAggregationGrid = [
+  { type: 'checkbox', width: '50' },
+  { field: 'HubAggregationSymbol',
+    headerText: 'HubAggregationSymbol',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Security',
+    headerText: 'Security',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'MakerSession',
+    headerText: 'MakerSession',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Sessions',
+    headerText: 'Sessions',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'ExecMode',
+    headerText: 'ExecMode',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'ExecBoost',
+    headerText: 'ExecBoost',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Enable',
+    headerText: 'Enable',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'FilterFactor',
+    headerText: 'FilterFactor',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'BookConstruction',
+    headerText: 'BookConstruction',
+    width: '150',
+    textAlign: 'Center' },
+  { field: 'Description',
+    headerText: 'Description',
     width: '150',
     textAlign: 'Center' },
 ];
@@ -976,25 +1030,17 @@ export const links = [
         name: 'TakerExecutionModels',
         icon: <FiShoppingBag />,
       },
-      {
-        name: 'RiskAccounts',
-        icon: <FiShoppingBag />,
-      },
-      {
-        name: 'Maker Api Link',
-        icon: <FiShoppingBag />,
-      },
     ],
   },
   {
     title: 'Risk Accounts',
     links: [
       {
-        name: 'Maker Sessions',
+        name: 'RiskAccounts',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Api Link',
+        name: 'AssetClassGroup',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1003,11 +1049,7 @@ export const links = [
     title: 'Risk Users',
     links: [
       {
-        name: 'Maker Sessions',
-        icon: <FiShoppingBag />,
-      },
-      {
-        name: 'Maker Api Link',
+        name: 'RiskUsers',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1016,11 +1058,7 @@ export const links = [
     title: 'Trade Copier',
     links: [
       {
-        name: 'Maker Sessions',
-        icon: <FiShoppingBag />,
-      },
-      {
-        name: 'Maker Api Link',
+        name: 'TradeCopier',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1029,11 +1067,7 @@ export const links = [
     title: 'GiveUp Rule',
     links: [
       {
-        name: 'Maker Sessions',
-        icon: <FiShoppingBag />,
-      },
-      {
-        name: 'Maker Api Link',
+        name: 'GiveUpRule',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1042,11 +1076,7 @@ export const links = [
     title: 'Filtration Pool',
     links: [
       {
-        name: 'Maker Sessions',
-        icon: <FiShoppingBag />,
-      },
-      {
-        name: 'Maker Api Link',
+        name: 'FiltrationPool',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1055,11 +1085,11 @@ export const links = [
     title: 'Trading',
     links: [
       {
-        name: 'Maker Sessions',
+        name: 'Broker View',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Api Link',
+        name: 'Trader View',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1068,11 +1098,55 @@ export const links = [
     title: 'Reports',
     links: [
       {
-        name: 'Maker Sessions',
+        name: 'Position',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Api Link',
+        name: 'Orders',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Maker Orders',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'GiveUp Orders',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Legs Report',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Fills Report',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'MT4 Reports',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Mt5 Reports',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Risk Account Statements',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Trader Transaction',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Price Improvement',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Maker National',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Symbol Notional',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1081,11 +1155,11 @@ export const links = [
     title: 'Risk Management',
     links: [
       {
-        name: 'Maker Sessions',
+        name: 'Quant Based Hybrid',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Api Link',
+        name: 'Exposure Based Hedging',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1094,15 +1168,24 @@ export const links = [
     title: 'Monitoring',
     links: [
       {
-        name: 'Maker Sessions',
+        name: 'Logs',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Api Link',
+        name: 'Trader Status',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Maker Status',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Feeder Status',
         icon: <FiShoppingBag />,
       },
     ],
   },
+
   // {
   //   title: 'Apps',
   //   links: [
@@ -1618,37 +1701,6 @@ export const listsMarkupData = [
   },
 ];
 
-export const HubAggregationData = [
-  {
-    CustomerID: 1001,
-    HubAggregationSymbol: 'AUDCAD',
-    Security: 'FX',
-    HubAggregationModel: 'Plain_HAM',
-    MAkerSessions: 'Liquidity Provider 1',
-    Sessions: 'MON,00:00',
-    ExecMode: 'SWEEP',
-    ExecBoost: ' ',
-    Enable: ' ',
-    FilterFactor: '-2',
-    BookConstruction: ' ',
-    Description: 'Australian Dollar vs Canadian Dollar',
-  },
-  {
-    CustomerID: 1002,
-    HubAggregationSymbol: 'AUDCAD',
-    Security: 'FX',
-    HubAggregationModel: 'Plain_HAM',
-    MAkerSessions: 'Liquidity Provider 1',
-    Sessions: 'MON,00:00',
-    ExecMode: 'SWEEP',
-    ExecBoost: ' ',
-    Enable: ' ',
-    FilterFactor: '-2',
-    BookConstruction: ' ',
-    Description: 'Australian Dollar vs Canadian Dollar',
-  },
-];
-
 export const listsRiskAccountData = [
   {
     CustomerID: 1001,
@@ -1666,6 +1718,52 @@ export const listsRiskAccountData = [
     LimitSymbolGroup: 'Limit-symbol-1',
     Enable: '',
     Description: '',
+    Action: '',
+  },
+];
+
+export const listsUsersData = [
+  {
+    CustomerID: 1001,
+    UserName: 'reset-me',
+    FirstName: 'resetme',
+    LastName: 'resetme',
+    Email: 'resetme@resetme.com',
+    Phone: '091238765',
+    RiskAccount: 'Test-1>Test-1>Test-1',
+    EmailsNotify: '',
+    Action: '',
+  },
+  {
+    CustomerID: 1002,
+    UserName: 'Trader-1',
+    FirstName: 'Trader',
+    LastName: 'UI',
+    Email: 'Trader@resetme.com',
+    Phone: '091238765',
+    RiskAccount: 'Test-1>Test-1>Test-1',
+    EmailsNotify: '',
+    Action: '',
+  },
+];
+
+export const listsAssetGroupData = [
+  {
+    CustomerID: 1001,
+    AssetClassGroup: 'CFD',
+    Description: 'CFD',
+    Action: '',
+  },
+  {
+    CustomerID: 1002,
+    AssetClassGroup: 'Futures',
+    Description: 'Futures',
+    Action: '',
+  },
+  {
+    CustomerID: 1003,
+    AssetClassGroup: 'FX',
+    Description: 'FX',
     Action: '',
   },
 ];
@@ -1719,6 +1817,37 @@ export const MakerApiLinkData = [
     Priority: '5',
     Values: '1=risk,2=account',
     Enable: '',
+  },
+];
+
+export const HubAggregationData = [
+  {
+    CustomerID: 1001,
+    HubAggregationSymbol: 'AUDCAD',
+    Security: 'FX',
+    HubAggregationModel: 'Plain_HAM',
+    MAkerSessions: 'Liquidity Provider 1',
+    Sessions: 'MON,00:00',
+    ExecMode: 'SWEEP',
+    ExecBoost: ' ',
+    Enable: ' ',
+    FilterFactor: '-2',
+    BookConstruction: ' ',
+    Description: 'Australian Dollar vs Canadian Dollar',
+  },
+  {
+    CustomerID: 1002,
+    HubAggregationSymbol: 'AUDCAD',
+    Security: 'FX',
+    HubAggregationModel: 'Plain_HAM',
+    MAkerSessions: 'Liquidity Provider 1',
+    Sessions: 'MON,00:00',
+    ExecMode: 'SWEEP',
+    ExecBoost: ' ',
+    Enable: ' ',
+    FilterFactor: '-2',
+    BookConstruction: ' ',
+    Description: 'Australian Dollar vs Canadian Dollar',
   },
 ];
 
